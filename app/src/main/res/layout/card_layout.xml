@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_view"
+    android:layout_margin="5dp"
+    card_view:cardBackgroundColor="#0099cc"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="3dp"
+    card_view:contentPadding="4dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/currency_name"
+            android:textSize="20sp"
+            android:text="United States dollar"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/currency_abbrv"
+            android:layout_below="@+id/currency_name"
+            android:text="(USD)"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btcBuyView"
+            android:layout_marginLeft="10dp"
+            android:text="btc buying"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/currency_name"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btcSellPrice"
+            android:layout_toRightOf="@+id/btcBuyView"
+            android:layout_marginLeft="10dp"
+            android:text="btc selling"
+            android:visibility="gone"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ethBuyPrice"
+            android:layout_marginLeft="10dp"
+            android:text="eth buying"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/currency_name"
+            android:layout_below="@+id/btcBuyView"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ethSellPrice"
+            android:layout_marginLeft="10dp"
+            android:text="eth selling"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/ethBuyPrice"
+            android:layout_below="@+id/btcSellPrice"
+            android:layout_marginTop="10dp"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

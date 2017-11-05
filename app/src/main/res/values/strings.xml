@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Cryprrency</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="spinner_item">
+        <item>Select Cryptocurrency</item>
+        <item>BTC</item>
+        <item>ETH</item>
+    </string-array>
+
+</resources>
